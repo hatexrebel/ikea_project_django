@@ -1,0 +1,175 @@
+
+.about-hero {
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: #f5e9c9;
+}
+
+.about-hero-content {
+    max-width: 650px;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.about-hero h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.about-hero p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* INTRODUCTION */
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 75px 8%;
+}
+
+.about-intro-text h2,
+.about-design-text h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.about-intro-text p,
+.about-design-text p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-intro-image img,
+.about-design-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    display: block;
+}
+
+/* VISION */
+
+.about-vision {
+    background: #f5d900;
+    text-align: center;
+    padding: 75px 15%;
+}
+
+.about-vision h2 {
+    font-size: 38px;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+.about-vision > p:last-child {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* DESIGN */
+
+.about-design {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+    padding: 75px 8%;
+}
+
+.about-design-text {
+    padding: 20px;
+}
+
+/* SUSTAINABILITY */
+
+.about-sustainability {
+    text-align: center;
+    background: #f3f3f3;
+    padding: 75px 15%;
+}
+
+.about-sustainability h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-sustainability > p:last-child {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* CTA */
+
+.about-cta {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about-cta h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.about-cta p {
+    margin-bottom: 25px;
+}
+
+.about-button {
+    display: inline-block;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.about-button:hover {
+    background: #333;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 40px;
+    }
+
+    .about-intro,
+    .about-design {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 45px 6%;
+    }
+
+    .about-vision,
+    .about-sustainability {
+        padding: 55px 8%;
+    }
+
+    .about-vision h2 {
+        font-size: 30px;
+    }
+
+    .about-design-image {
+        order: 2;
+    }
+}

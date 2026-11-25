@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Products | IKEA Inspired{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'products.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="products-hero">
+    <div class="products-hero-content">
+        <p class="eyebrow">MAKE YOUR SPACE YOURS</p>
+        <h1>Find everything<br>for your home.</h1>
+        <p>
+            Explore furniture and home essentials designed
+            to make everyday life more comfortable.
+        </p>
+    </div>
+</section>
+
+<section class="products-section">
+    <div class="section-heading">
+        <div>
+            <p class="eyebrow">EXPLORE OUR COLLECTION</p>
+            <h2>Popular categories</h2>
+        </div>
+        <p>Ideas and essentials for every corner of your home.</p>
+    </div>
+
+    <div class="category-grid">
+
+        <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800"
+                 alt="Comfortable living room sofa">
+            <h3>Sofas & Armchairs</h3>
+            <p>Comfortable seating for relaxing and spending time together.</p>
+        </article>
+
+        <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800"
+                 alt="Modern bedroom furniture">
+            <h3>Beds & Mattresses</h3>
+            <p>Create a relaxing bedroom and enjoy a better night's sleep.</p>
+        </article>
+
+        <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800"
+                 alt="Modern kitchen interior">
+            <h3>Kitchen</h3>
+            <p>Practical solutions to make cooking and dining easier.</p>
+        </article>
+
+        <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?w=800"
+                 alt="Home decoration and accessories">
+            <h3>Home Decoration</h3>
+            <p>Add personality to your home with thoughtful details.</p>
+        </article>
+
+        <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800"
+                 alt="Home office desk and furniture">
+            <h3>Home Office</h3>
+            <p>Make room for focus, creativity and productivity.</p>
+        </article>
+
+        <article class="category-card">
+            <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=800"
+                 alt="Modern lighting in a home">
+            <h3>Lighting</h3>
+            <p>Bring warmth and atmosphere to every room.</p>
+        </article>
+
+    </div>
+</section>
+
+<section class="products-cta">
+    <h2>A home that feels like you.</h2>
+    <p>
+        Discover the ideas and values behind our
+        approach to better everyday living.
+    </p>
+    <a href="{% url 'about' %}" class="cta-button">Discover our story</a>
+</section>
+
+{% endblock %}

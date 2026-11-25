@@ -1,0 +1,163 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+/* TOP BAR */
+
+.top-bar {
+    background: #111;
+    color: white;
+    padding: 12px 4%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    min-height: 95px;
+    padding: 20px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    background: #0058a3;
+    color: #ffdb00;
+    padding: 10px 17px;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #ffdb00;
+    border-radius: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a,
+.nav-icons a {
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-icons a:hover {
+    text-decoration: underline;
+}
+
+.search-box {
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background: #f5f5f5;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.nav-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* MAIN */
+
+main {
+    min-height: 400px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #f5f5f5;
+    padding: 60px 4% 25px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 35px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.footer-column h3 {
+    font-size: 17px;
+}
+
+.footer-column p,
+.footer-column a {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-column a {
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+    padding-top: 25px;
+    font-size: 13px;
+    color: #555;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .top-bar {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}

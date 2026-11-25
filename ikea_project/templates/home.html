@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home | IKEA Inspired
+{% endblock %}
+
+{% block content %}
+
+<section style="padding: 100px 50px; background: #ffdb00;">
+    <h1 style="font-size: 55px;">
+        Welcome to IKEA
+    </h1>
+
+    <p style="font-size: 22px; margin-top: 20px;">
+        Make your home a better place.
+    </p>
+
+    <a href="{% url 'products' %}"
+       style="display: inline-block; margin-top: 30px;
+       padding: 15px 25px; background: black;
+       color: white; text-decoration: none;">
+        Explore Products →
+    </a>
+</section>
+
+{% endblock %}

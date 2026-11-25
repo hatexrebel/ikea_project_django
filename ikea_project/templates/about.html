@@ -1,0 +1,104 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About IKEA | IKEA Inspired{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'about.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- ABOUT HERO -->
+<section class="about-hero">
+    <div class="about-hero-content">
+        <p class="eyebrow">WHO WE ARE</p>
+        <h1>Making everyday life better.</h1>
+        <p>
+            Discover the ideas behind affordable, functional
+            and beautiful home furnishing.
+        </p>
+    </div>
+</section>
+
+<!-- INTRODUCTION -->
+<section class="about-intro">
+    <div class="about-intro-text">
+        <p class="eyebrow">ABOUT IKEA</p>
+        <h2>A better everyday life starts at home.</h2>
+        <p>
+            IKEA is a globally recognised home furnishing brand
+            known for combining functional design, affordability
+            and practical solutions for everyday living.
+        </p>
+        <p>
+            From furniture and lighting to storage and home
+            accessories, its products are designed to help people
+            create comfortable and useful living spaces.
+        </p>
+    </div>
+
+    <div class="about-intro-image">
+        <img
+            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+            alt="Modern and comfortable living room"
+        >
+    </div>
+</section>
+
+<!-- VISION -->
+<section class="about-vision">
+    <p class="eyebrow">OUR VISION</p>
+    <h2>To create a better everyday life for the many people.</h2>
+    <p>
+        The idea is simple: good home furnishing should be
+        accessible to more people, not just a few.
+    </p>
+</section>
+
+<!-- DESIGN PHILOSOPHY -->
+<section class="about-design">
+    <div class="about-design-image">
+        <img
+            src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200"
+            alt="Minimalist home interior"
+        >
+    </div>
+
+    <div class="about-design-text">
+        <p class="eyebrow">DESIGN PHILOSOPHY</p>
+        <h2>Good design for everyday living.</h2>
+        <p>
+            Functional design, quality, sustainability,
+            affordability and form are important ideas
+            behind IKEA's approach to home furnishing.
+        </p>
+        <p>
+            The goal is to create products that are useful,
+            attractive and practical for everyday life.
+        </p>
+    </div>
+</section>
+
+<!-- SUSTAINABILITY -->
+<section class="about-sustainability">
+    <p class="eyebrow">A BETTER FUTURE</p>
+    <h2>Thinking about tomorrow.</h2>
+    <p>
+        Responsible use of resources and more sustainable
+        ways of living are important parts of the future
+        of home furnishing.
+    </p>
+</section>
+
+<!-- CTA -->
+<section class="about-cta">
+    <h2>Make your home your favourite place.</h2>
+    <p>Explore furniture and ideas for your everyday life.</p>
+    <a href="{% url 'products' %}" class="about-button">
+        Explore Products
+    </a>
+</section>
+
+{% endblock %}

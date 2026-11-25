@@ -1,0 +1,39 @@
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Login | IKEA Inspired{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'auth.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<section class="auth-container">
+
+    <div class="auth-card">
+
+        <h1>Welcome Back</h1>
+        <p>Login to your account to continue.</p>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            <div class="form-fields">
+                {{ form.as_p }}
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p class="auth-link">
+            Don't have an account?
+            <a href="{% url 'signup' %}">Create an account</a>
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}
