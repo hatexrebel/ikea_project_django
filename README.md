@@ -8,6 +8,7 @@ Project Type: Django Web Development Project
 Framework: Django 4.2.30
 Language: Python
 Database: SQLite
+Check Project Working video by using this link: https://drive.google.com/file/d/1F3b148cnEN0gRfGYED3eqlaog-X3MLJW/view?usp=sharing
 
 2. Project Objectives
 
